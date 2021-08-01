@@ -41,5 +41,4 @@ public fun main() {
     """.trimIndent()
 
     println(bigString)
-
 }
