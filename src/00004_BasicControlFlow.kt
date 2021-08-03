@@ -13,4 +13,32 @@ public fun main() {
 
     val isOneGreaterThanTwo = (1 > 2)
     val isOneLessThanTwo = (1 < 2)
+
+    //If expression
+    if (2 > 1) {
+        println("Yes, 2 is grater than 1")
+    }
+
+    val a = 5
+    val b = 10
+    val min = if (a < b) a else b
+    val max = if (a > b) a else b
+
+    //
+    val hourOfDay = 12
+
+    val timeOfDay = if (hourOfDay < 6) {
+        "Early Monday"
+    } else if (hourOfDay < 12) {
+        "Morning"
+    } else if (hourOfDay < 17) {
+        "AfterNoon"
+    } else if (hourOfDay < 20) {
+        "Evening"
+    } else if (hourOfDay < 24) {
+        "Late evening"
+    } else {
+        "INVALID HOUR"
+    }
+
 }
