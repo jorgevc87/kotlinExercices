@@ -56,6 +56,64 @@ public fun main() {
     price += hoursWorked * 25
 
     println(price)
+
+    //Loops
+    println("LOOPS with While")
+    var sum = 1
+    while (sum < 1000) {
+        sum = sum + (sum + 1)
+
+        println("Sum: $sum")
+    }
+
+    //Breaking out of a loop
+    var sum2 = 1
+
+    println("Valor inicial de sum2: $sum2")
+    while (true) {
+        sum2 = sum2 + (sum2 + 1)
+        if (sum2 >= 1000) {
+            break
+        }
+    }
+
+    println("Valor final de sum2: $sum2")
+
+    //For Loops and ranges
+    val closeRange = 0..5  //0,1,2,3,4,5
+
+    val halfOpenRange = 0 until 5  //0,1,2,3,4
+
+    val count = 10
+
+    var sum3 = 0
+    println("Valor inicial de sum3: $sum3")
+    for (i in 1..count) {
+        sum3 += i
+    }
+    println("Valor final de sum3: $sum3")
+    println()
+    println()
+
+    println("Imprimiendo un triangulo")
+
+    val fullWidth = 11
+
+    for (i in 0..fullWidth) {
+        var stars = ""
+        var sideSpace = ""
+        var sideSpacesWidth = (fullWidth / 2) - i
+
+        for (s in 1..i) {
+            stars += "*"
+        }
+
+        for (j in 1..sideSpacesWidth) {
+            sideSpace += " "
+        }
+
+        println("$sideSpace$stars$sideSpace")
+    }
 }
 
 
