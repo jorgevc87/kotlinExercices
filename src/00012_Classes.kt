@@ -4,7 +4,7 @@ fun main() {
     println("Fullname of John: ${john.fullName}")
 }
 
-class Person(var firstName: String, var lastName: String) {
+open class Person(var firstName: String, var lastName: String) {
 
     val fullName
         get() = "$firstName $lastName"
